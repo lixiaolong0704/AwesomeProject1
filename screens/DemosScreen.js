@@ -15,6 +15,7 @@ export default class DemosScreen extends React.Component {
 
     }
 
+
     render() {
 
         const {navigate} = this.props.navigation;
@@ -75,6 +76,43 @@ export default class DemosScreen extends React.Component {
                     }}
                     title="RefreshableListDemo"
                 />
+                <Button
+                    onPress={() => {
+                        navigate('DirectManipulationDemo', {name: 'Jane'})
+
+                    }}
+                    title="DirectManipulationDemo"
+                />
+                <Button
+                    onPress={() => {
+                        navigate('AsyncStorageDemo', {name: 'Jane'})
+
+                    }}
+                    title="AsyncStorageDemo"
+                />
+                <Button
+                    onPress={() => {
+                        navigate('WebViewDemo', {name: 'Jane'})
+
+                    }}
+                    title="WebViewDemo"
+                />
+                <Button
+                    onPress={() => {
+                        navigate('RNWebViewDemo', {name: 'Jane'})
+
+                    }}
+                    title="RNWebViewDemo"
+                />
+                <Button
+                    onPress={() => {
+                        navigate('FlatListDemo', {name: 'Jane'})
+
+                    }}
+                    title="FlatListDemo"
+                />
+
+
             </ScrollView>
         );
     }

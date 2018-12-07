@@ -16,9 +16,12 @@ import AnimationsDemo from '../screens/Test/AnimationsDemo';
 import ModalDemo from '../screens/Test/ModalDemo';
 import ViewPagerAndroidDemo from '../screens/Test/ViewPagerAndroidDemo'
 import RefreshableListDemo from '../screens/Test/RefreshableListDemo'
-
-
+import DirectManipulationDemo from '../screens/Test/DirectManipulationDemo'
+import AsyncStorageDemo from '../screens/Test/AsyncStorageDemo'
+import WebViewDemo from '../screens/Test/WebViewDemo'
+import RNWebViewDemo from '../screens/Test/RNWebViewDemo'
 import SettingsScreen from '../screens/SettingsScreen';
+import FlatListDemo from '../screens/Test/FlatListDemo'
 
 const HomeStack = createStackNavigator({
     Home: HomeScreen,
@@ -48,7 +51,12 @@ const DemosStack = createStackNavigator({
     AnimationsDemo,
     ModalDemo,
     ViewPagerAndroidDemo,
-    RefreshableListDemo
+    RefreshableListDemo,
+    DirectManipulationDemo,
+    AsyncStorageDemo,
+    WebViewDemo,
+    RNWebViewDemo,
+    FlatListDemo
 
 });
 
