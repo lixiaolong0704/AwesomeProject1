@@ -21,7 +21,8 @@ import AsyncStorageDemo from '../screens/Test/AsyncStorageDemo'
 import WebViewDemo from '../screens/Test/WebViewDemo'
 import RNWebViewDemo from '../screens/Test/RNWebViewDemo'
 import SettingsScreen from '../screens/SettingsScreen';
-import FlatListDemo from '../screens/Test/FlatListDemo'
+import FlatListDemo from '../screens/Test/FlatListDemo';
+import FlatListPullUpDemo from '../screens/Test/FlatListPullUpDemo';
 
 const HomeStack = createStackNavigator({
     Home: HomeScreen,
@@ -56,7 +57,8 @@ const DemosStack = createStackNavigator({
     AsyncStorageDemo,
     WebViewDemo,
     RNWebViewDemo,
-    FlatListDemo
+    FlatListDemo,
+    FlatListPullUpDemo
 
 });
 

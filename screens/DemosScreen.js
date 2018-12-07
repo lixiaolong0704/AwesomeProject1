@@ -111,6 +111,13 @@ export default class DemosScreen extends React.Component {
                     }}
                     title="FlatListDemo"
                 />
+                <Button
+                    onPress={() => {
+                        navigate('FlatListPullUpDemo', {name: 'Jane'})
+
+                    }}
+                    title="FlatListPullUpDemo"
+                />
 
 
             </ScrollView>
