@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, ScrollView, View, StyleSheet, FlatList } from 'react-native';
 import {ExpoLinksView} from '@expo/samples';
-
+import { Constants } from 'expo';
 export default class FlatListPullUpDemo extends React.Component {
     static navigationOptions = {
         title: 'FlatListPullUpDemo',
@@ -24,8 +24,7 @@ export default class FlatListPullUpDemo extends React.Component {
         });
     }
     fetchData() {
-        alert('test');
-        const newList = [{id: 1, text: 'a'}, {id: 2, text: 'b'}, {id: 3, text: 'c'}]
+        const newList = [{id: 1, text: 'a'}, {id: 2, text: 'b'+Math.random()}, {id: 3, text: 'c'}]
         this.setState({ stories: newList, isFetching: false });
     }
     _renderItem = ({item}) => (
@@ -33,14 +32,14 @@ export default class FlatListPullUpDemo extends React.Component {
     )
     render() {
         return (
-            <ScrollView style={styles.container}>
+            <ScrollView contentContainerStyle={styles.container}>
                 <View style={styles.wrapper}>
                     <Text>Hello World!!!</Text>
                     <FlatList
                         onRefresh={() => this.onRefresh()}
                         refreshing={this.state.isFetching}
                         data={this.state.stories}
-                        keyExtractor={(item) => item.id}
+                        keyExtractor={(item) => item.id+''}
                         renderItem={this._renderItem}
                     />
                 </View>

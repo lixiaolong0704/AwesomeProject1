@@ -23,11 +23,12 @@ import RNWebViewDemo from '../screens/Test/RNWebViewDemo'
 import SettingsScreen from '../screens/SettingsScreen';
 import FlatListDemo from '../screens/Test/FlatListDemo';
 import FlatListPullUpDemo from '../screens/Test/FlatListPullUpDemo';
+import FlatListInfinateScrollDemo from '../screens/Test/FlatListInfinateScrollDemo';
+
 
 const HomeStack = createStackNavigator({
     Home: HomeScreen,
 });
-
 
 HomeStack.navigationOptions = {
     tabBarLabel: 'Home',
@@ -58,7 +59,8 @@ const DemosStack = createStackNavigator({
     WebViewDemo,
     RNWebViewDemo,
     FlatListDemo,
-    FlatListPullUpDemo
+    FlatListPullUpDemo,
+    FlatListInfinateScrollDemo
 
 });
 

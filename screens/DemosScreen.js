@@ -23,6 +23,14 @@ export default class DemosScreen extends React.Component {
             <ScrollView style={styles.container}>
                 <Button
                     onPress={() => {
+                        navigate('FlatListInfinateScrollDemo', {name: 'Jane'})
+
+                    }}
+                    title="FlatListInfinateScrollDemo"
+                />
+
+                <Button
+                    onPress={() => {
                         navigate('Demo1Screen', {name: 'Jane'})
 
                     }}
@@ -118,6 +126,7 @@ export default class DemosScreen extends React.Component {
                     }}
                     title="FlatListPullUpDemo"
                 />
+
 
 
             </ScrollView>
